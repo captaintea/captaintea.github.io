@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> 
+    <link href="/css/style.css" rel="stylesheet">
+    <html xmlns:vml="urn:schemas-microsoft-com:vml">
+    <title>Task</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true_or_false"></script>
+    <script src="/js/logic.js"></script>
+</head>
+<body>
+<div  id="header">
+    <p id="header-tittle">Оформление заказа</p>
+</div>
+<div id="main">
+    <form name="myform" method="POST" action="check.php">
+        <div class="form-field">
+            <label>E-MAIL</label>
+            <div class="field-devider"></div>
+            <input name="mail" class="edit-text" value="" placeholder="Напр. vasya@mail.ru">
+        </div>
+        <div class="form-field">
+            <label>АДРЕС</label>
+            <div class="field-devider"></div>
+            <input id="adress" name="adress" class="edit-text" placeholder="Напр. ул. Линейная 20а, кв. 10">
+            <p id="clarification">улица, дом, корпус, квартира</p>
+        </div>
+        <div class="form-field">
+            <label>ГОРОД</label>
+            <div class="field-devider"></div>
+            <input name="city" class="edit-text">
+        </div>
+        <div class="form-field" id = "part-devider">
+            <label>ИНДЕКС</label>
+            <div class="field-devider"></div>
+            <input name="yourIndex" class="edit-text">
+        </div>
+        <div id="delivery_field">
+            <label>СПОСОБ ДОСТАВКИ</label>
+        </div>
+        <div>
+            <input id="r_1" class="r_button" type="radio" name="delivery" checked="checked" value="КУРЬЕР">
+            <label for="r_1" class="r_label">КУРЬЕР</label>
+            <input id="r_2" class="r_button" type="radio" name="delivery" value="САМОВЫВОЗ">
+            <label for="r_2" class="r_label">САМОВЫВОЗ</label>
+            <input id="r_3" class="r_button" type="radio" name="delivery" value="ПОЧТА">
+            <label for="r_3" class="r_label">ПОЧТА РОССИИ</label>
+        </div>
+        <div id="button-devider"></div>
+        <div>
+            <input id="button" type="submit" value="ОФОРМИТЬ ЗАКАЗ">
+        </div>
+    </form>
+</div>
+<div id="map-field">
+    <div id="map"></div>
+    <div id="error-field"></div>
+</div>
+</body>
+</html>

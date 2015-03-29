@@ -1,0 +1,132 @@
+body {
+    margin-left: 547px;
+    background-color: #f7f7f7;
+    font-family: arial;
+    margin-top: 0;
+}
+
+label {
+    font-size: 13px;
+}
+
+.field-devider{
+    margin-bottom: 8px;
+}
+
+.form-field {
+    margin-bottom: 22px;
+}
+
+.edit-text{
+    border: 1px solid #d6cfd6;
+    background: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #0f0801;
+    height: 32px;
+    width: 345px;
+    text-indent: 10px;
+}
+
+.edit-text:focus{
+    outline: none;
+    border: 1px solid #2979ff;
+}
+
+.r_label {
+    padding-bottom: 21px;
+    padding-top: 4px;
+    display: list-item;
+    list-style-type: none;
+    text-indent: 10px;
+}
+
+.r_button {
+    display: none;
+    margin-right: 300px;
+}
+
+.r_button + label {
+    background: url("/image/radio_not_chosen.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+.r_button:checked + label {
+    background: url("/image/radio_chosen.png") no-repeat scroll 0 0;
+}
+
+#header {
+    margin-bottom: 59px;
+    font-size: 30px;
+    text-indent: 30px;
+}
+
+#header-tittle {
+    margin-top: 95px;
+}
+
+#main {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 600px;
+}
+
+#map-field {
+    margin-top: 110px;
+    float:left;
+    padding-left: 17px;
+    margin-bottom: 200px;
+    font-size: 12px;
+    color: #ed0303;
+}
+
+#error-field {
+    margin-top: 150px;
+    width: 120px;
+    height: 120px;
+}
+
+#part-devider {
+    margin-bottom: 42px;
+}
+
+#map {
+    width: 120px;
+    height: 120px;
+    float: right;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+#delivery_field{
+    margin-bottom: 18px;
+}
+
+#clarification {
+    color: #b3b3b3;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#button-devider {
+    margin-bottom: 22px;
+}
+
+#button {
+ text-decoration:none; 
+ text-align:center; 
+ padding-left: 0px;
+ height: 35px;
+ width: 346px;
+ border:none; 
+ -webkit-border-radius:3px;
+ -moz-border-radius:3px; 
+ border-radius: 3px; 
+ color:#ffffff; 
+ background:#2977ff;
+ margin-bottom: 115px; 
+}
