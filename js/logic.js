@@ -39,9 +39,11 @@ function setValidationEvents(){
     });
     $('*[name=mail]').focus(function(){
         $(this).css('color', DEFAULT_COLOR);
+        $('#error-field').html("");
     });
     $('input:not(*[name=mail])').focus(function(){
         setDefaultColor();
+        $('#error-field').html("");
     });
     $(document).on('submit', validate);
 }
@@ -108,7 +110,7 @@ function parseResult(components){
     if ((street != "")&&(house != "")){
         if (!isNaN(flat))
             if (flat == house){
-                if (flatRepeated.length == 2)
+                if (flatRepeated.length != 2)
                     $('*[name=adress]').val(street + " " + "д." + house + " " + "кв." + flat);
             }else $('*[name=adress]').val(street + " " + "д." + house + " " + "кв." + flat);
     }
